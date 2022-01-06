@@ -114,26 +114,29 @@ body {
   opacity: 80%;
 }
 
-button {
+.button {
   width: 70%;
   margin-top: 25px;
-  border: none;
   padding: 15px 0;
   border-radius: 10px;
   background: hsl(245, 75%, 52%);
   box-shadow: 0px 15px 30px rgba(114, 128, 167, 50%);
-}
-button:hover {
-  opacity: 80%;
-}
-
-button a {
   color: #fff;
   font-weight: 700;
   font-family: "Red Hat Display", sans-serif;
   font-size: 15px;
   text-decoration: none;
 }
+.button:hover {
+  opacity: 80%;
+}
+.button_text {
+  background: none;
+  background-color: none;
+  padding: 0;
+}
+
+
 
 .cancel a {
   text-decoration: none;
