@@ -1,0 +1,166 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+body {
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+}
+.box {
+  width: 420px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.inside-box {
+  width: 100%;
+}
+
+.inside-box.image {
+  width: 100%;
+}
+.inside-box.image img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.inside-box.title h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  width: 70%;
+  color: hsl(223, 47%, 23%);
+}
+.inside-box.description {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 15px;
+  width: 70%;
+  color: hsl(224, 23%, 55%);
+}
+.planPrice {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "i p c" "i pr c";
+  background: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 15px 0;
+  align-items: center;
+}
+.music-img {
+  display: flex;
+  justify-content: center;
+  grid-area: i;
+  align-self: center;
+}
+.musicImg {
+}
+.plan {
+  grid-area: p;
+  text-align: left;
+  align-self: flex-end;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.cancel {
+  margin: 35px 0 40px 0;
+}
+.price {
+  grid-area: pr;
+  text-align: left;
+  color: hsl(224, 23%, 55%);
+}
+.change {
+  grid-area: c;
+  font-weight: 500;
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+}
+.change a {
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(245, 75%, 52%);
+}
+.change a:hover {
+  text-decoration: none;
+  opacity: 80%;
+}
+
+button {
+  width: 70%;
+  margin-top: 25px;
+  border: none;
+  padding: 15px 0;
+  border-radius: 10px;
+  background: hsl(245, 75%, 52%);
+  box-shadow: 0px 15px 30px rgba(114, 128, 167, 50%);
+}
+button:hover {
+  opacity: 80%;
+}
+
+button a {
+  color: #fff;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.cancel a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+.cancel a:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  background: none;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 475px) {
+  .box {
+    width: 90%;
+    margin-top: 10vh;
+  }
+  .title h1 {
+    font-size: 0.8em;
+  }
+}
