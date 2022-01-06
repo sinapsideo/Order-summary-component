@@ -131,8 +131,8 @@ body {
   opacity: 80%;
 }
 .button_text {
-  background: none;
-  background-color: none;
+  color: #fff;
+  text-decoration: none;
   padding: 0;
 }
 
