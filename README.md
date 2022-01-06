@@ -18,7 +18,7 @@ Users should be able to:
 
 ### Links
 
-- Solution  URL: [https://sinapsideo.github.io/NFT-Preview-Card/](https://sinapsideo.github.io/NFT-Preview-Card/)
+- Solution  URL: [https://sinapsideo.github.io/Order-summary-component/](https://sinapsideo.github.io/Order-summary-component/)
 
 
 ### Built with
